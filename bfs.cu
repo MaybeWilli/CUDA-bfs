@@ -236,8 +236,6 @@ int main()
         dim3 grid(v_size/256 + 1, 1);
         dim3 block(256, 1);
 
-        dim3 grid2(v_size*32/256 + 1, 1);
-
         float milliseconds;
         cudaEvent_t startEvent, stopEvent;
         checkCuda( cudaEventCreate(&startEvent) );
